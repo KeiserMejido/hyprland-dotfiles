@@ -7,6 +7,7 @@
 local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "./.config/rofi/type-2/launcher.sh"
+local powermenu    = "./.config/rofi/type-3/powermenu.sh"
 
 
 
@@ -24,6 +25,7 @@ local killWindowBind = hl.bind(mainMod .. " + SHIFT + C", hl.dsp.window.kill())
 
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(powermenu))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))

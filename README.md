@@ -17,6 +17,7 @@ A workspace focused on clean, visual consistency, and workflow efficiency. Curre
 | **Terminal** | Kitty |
 | **Shell** | Fish |
 | **Prompt** | Starship |
+| **Lockscreen** | Hyprlock 
 
 ## Features
 * **Dynamic Waybar:** Customized modules, a floating calendar, network status, battery status, keyboard language and responsive Cava integration.

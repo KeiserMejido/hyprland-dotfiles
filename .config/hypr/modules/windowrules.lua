@@ -43,7 +43,6 @@ hl.layer_rule({
     animation = "slide right",
 })
 
-
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
 --     name  = "no-anim-overlay",
