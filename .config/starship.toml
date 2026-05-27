@@ -1,0 +1,103 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+# Pipes ╰─ ╭─
+# Powerline symbols                                     
+# Wedges 🭧🭒 🭣🭧🭓
+# Random noise 🬖🬥🬔🬗
+# Cool stuff 󰜥   
+
+# format = """
+# $directory $fill $git_branch $cmd_duration
+#  $character"""
+format = """
+$cmd_duration $directory$git_branch
+  $character"""
+
+[fill]
+symbol = '-'
+style = 'fg:#7c6f64'
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[ ](bold fg:#7daea3)"
+error_symbol = "[ ](bold fg:#ea6962)"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[git_branch]
+style = "bg: #7daea3"
+symbol = "󰘬"
+truncation_length = 12
+truncation_symbol = ""
+format = " 󰜥 [](bold fg:#7daea3)[$symbol $branch(:$remote_branch)](fg:#1d2021 bg:#7daea3)[ ](bold fg:#7daea3)"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = " "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+
+[git_status]
+conflicted = " 🏳 "
+ahead = " 🏎💨 "
+behind = " 😰 "
+diverged = " 😵 "
+untracked = " 🤷 ‍"
+stashed = " 📦 "
+modified = " 📝 "
+staged = '[++\($count\)](green)'
+renamed = " ✍️ "
+deleted = " 🗑 "
+
+[hostname]
+ssh_only = false
+format =  "[•$hostname](bg:#7daea3 bold fg:#1d2021)[](bold fg:#7daea3)"
+trim_at = ".companyname.com"
+disabled = false
+
+[line_break]
+disabled = false
+
+[memory_usage]
+disabled = true
+threshold = -1
+symbol = " "
+style = "bold dimmed green"
+
+[time]
+disabled = true
+format = '🕙[\[ $time \]]($style) '
+time_format = "%T"
+
+[username]
+style_user = "bold bg:#7daea3 fg:#1d2021"
+style_root = "red bold"
+format = "[](bold fg:#7daea3)[$user]($style)"
+disabled = false
+show_always = true
+
+[directory]
+home_symbol = " "
+read_only = "  "
+style = "bg:#3c3836 fg:#d4be98"
+truncation_length = 2
+truncation_symbol = ".../"
+format = '[](bold fg:#3c3836)[󰉋 → $path]($style)[](bold fg:#3c3836)'
+
+
+[directory.substitutions]
+"Desktop" = "  "
+"Documents" = "  "
+"Downloads" = "  "
+"Music" = " 󰎈 "
+"Pictures" = "  "
+"Videos" = "  "
+"GitHub" = " 󰊤 "
+
+[cmd_duration]
+min_time = 0
+format = '[](bold fg:#7daea3)[󰪢 $duration](bold bg:#7daea3 fg:#1d2021)[](bold fg:#7daea3)'
