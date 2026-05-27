@@ -15,10 +15,13 @@ A workspace focused on clean, visual consistency, and workflow efficiency. Curre
 | **Audio Visualizer** | Cava |
 | **App Launcher** | Rofi |
 | **Terminal** | Kitty |
+| **Shell** | Fish |
+| **Prompt** | Starship |
 
 ## Features
 * **Dynamic Waybar:** Customized modules, a floating calendar, network status, battery status, keyboard language and responsive Cava integration.
 * **Smart Window Rules:** Optimized to productivity with scrooling window tabs
+* **Modern Terminal Experience:** Kitty terminal paired with Fish shell for intelligent autosuggestions and Starship for a fast, aesthetic, and informative prompt.
 
 ## Installation
 
