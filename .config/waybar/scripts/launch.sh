@@ -1,5 +1,7 @@
 #!/bin/bash
 
 pkill waybar
-waybar &
+pkill swaync
 
+waybar &
+swaync &

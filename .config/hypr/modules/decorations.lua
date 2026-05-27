@@ -13,7 +13,7 @@ hl.config({
         border_size = 1,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)"}},
+            active_border   = { colors = {"rgba(7daea3FF)"}},
             inactive_border = "rgba(595959aa)",
         },
 
@@ -31,7 +31,7 @@ hl.config({
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 0.8,
-        inactive_opacity = 0.6,
+        inactive_opacity = 0.7,
 
         shadow = {
             enabled      = true,

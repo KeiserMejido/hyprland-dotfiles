@@ -37,6 +37,13 @@ hl.layer_rule({
     dim_around = true
 })
 
+hl.layer_rule({
+    name = "notifications-center",
+    match = { namespace = "swaync-control-center" },
+    animation = "slide right",
+})
+
+
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
 --     name  = "no-anim-overlay",
